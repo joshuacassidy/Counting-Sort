@@ -16,8 +16,7 @@ public class CountingSort {
             count[counter] += 1;
         }
 
-        int total = 0;
-        for (int i = 0; i < maxVal(arr); i++) {
+        for (int i = 0, total = 0; i < maxVal(arr); i++) {
             int oldCount = count[i];
             count[i] = total;
             total += oldCount;
